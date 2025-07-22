@@ -54,9 +54,12 @@ function initMarquee() {
     
     if (!marqueeContent) return;
     
-    // Clone the content for seamless loop
-    const marqueeItems = marqueeContent.innerHTML;
-    marqueeContent.innerHTML = marqueeItems + marqueeItems;
+    // Clone the content for seamless loop - only if not already cloned
+    if (!marqueeContent.dataset.cloned) {
+        const marqueeItems = marqueeContent.innerHTML;
+        marqueeContent.innerHTML = marqueeItems + marqueeItems;
+        marqueeContent.dataset.cloned = 'true';
+    }
     
     // Handle touch events for mobile
     let touchStartX = 0;
