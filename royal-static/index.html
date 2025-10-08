@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Property Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand">YourBrand</a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+          <ul class="nav-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a class="btn" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="section hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Property Management That Performs</h1>
+            <p>Transparent pricing, vetted tenants, and responsive maintenance for peace of mind.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#contact">Get a Free Rental Assessment</a>
+              <a class="btn btn-outline" href="#services">Our Services</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <!-- Replace with your own licensed image -->
+            <img src="images/placeholder-hero.jpg" alt="Modern apartment building" />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Tenant Placement</h3>
+              <p>Marketing, showings, screening, and lease signing.</p>
+            </article>
+            <article class="card">
+              <h3>Full-Service Management</h3>
+              <p>Rent collection, inspections, maintenance, and reporting.</p>
+            </article>
+            <article class="card">
+              <h3>Maintenance</h3>
+              <p>24/7 work orders with trusted vendors.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section alt">
+        <div class="container">
+          <div class="grid-2">
+            <div>
+              <h2>About Us</h2>
+              <p>We combine data-driven pricing with local expertise to reduce vacancy and protect your investment.</p>
+            </div>
+            <div>
+              <!-- Replace with your own licensed image -->
+              <img src="images/placeholder-about.jpg" alt="Team collaborating in office" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="container">
+          <h2>What Clients Say</h2>
+          <div class="quotes">
+            <blockquote>“Professional, communicative, and thorough.”</blockquote>
+            <blockquote>“Found great tenants fast and kept us informed.”</blockquote>
+            <blockquote>“Maintenance handled quickly and cost-effectively.”</blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Get In Touch</h2>
+          <form id="contact-form" novalidate class="form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" required aria-describedby="name-error" />
+              <p id="name-error" class="error" role="alert" hidden>Please enter your name.</p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required aria-describedby="email-error" />
+              <p id="email-error" class="error" role="alert" hidden>Please enter a valid email.</p>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" aria-describedby="message-error"></textarea>
+              <p id="message-error" class="error" role="alert" hidden>Message must be at least 10 characters.</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <p id="form-success" class="success" role="status" hidden>Thank you! We will get back to you shortly.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="brand">YourBrand</p>
+          <p class="muted">Quality property management solutions.</p>
+        </div>
+        <nav aria-label="Footer">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <p>Email: info@example.com</p>
+          <p>Phone: (000) 000-0000</p>
+        </div>
+      </div>
+      <div class="container">
+        <p class="tiny">© <span id="year"></span> YourBrand. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
